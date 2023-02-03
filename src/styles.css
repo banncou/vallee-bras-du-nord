@@ -255,6 +255,14 @@ footer a {
     grid-gap: 32px;
   }
 
+  .text-welcome-centers {
+    margin-bottom: 20px;
+  }
+
+  .video-text {
+    margin-bottom: 40px;
+  }
+
   section {
     padding: 30px;
   }
@@ -265,5 +273,9 @@ footer a {
 
   .embed {
     aspect-ratio: 16 / 9;
+  }
+
+  .video-grid-3-columns {
+    grid-template-columns: 1fr;
   }
 }
