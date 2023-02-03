@@ -30,6 +30,10 @@ body {
   aspect-ratio: 1 / 1;
 }
 
+.text-welcome-centers {
+  margin-bottom: 50px;
+}
+
 .card {
   background: white;
   margin: 30px 0;
@@ -68,6 +72,24 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.video {
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+.video-text {
+  margin-bottom: 60px;
+}
+
+.video-grid-3-columns {
+  width: 100%;
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 section {
