@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+.more-info {
+  margin-top: 30px;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -58,11 +62,43 @@ body {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   padding: 16px;
-  background-color: #462cb3;
+  background-color: #004445;
   text-decoration: none;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.btn:hover {
+  background-color: #2c786c;
+  color: white;
+  transition: 1s;
+}
+
+.btn-about {
+  padding: 10px 20px;
+  background: #004445;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 21px;
+  display: block;
+  width: 125px;
+  margin-top: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.btn-about:hover {
+  background-color: #2c786c;
+  color: white;
+  transition: 1s;
 }
 
 .img-responsive {
@@ -112,17 +148,19 @@ header {
 }
 
 header h1 {
-  font-weight: 700;
-  font-size: 96px;
+  font-size: 125px;
   line-height: 1;
   letter-spacing: 5px;
-  margin: 0 0 20px;
+  margin: 0;
   padding-top: 20px;
+  font-family: "active-one", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header h2 {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 5px;
   margin: 0 0 40px;
@@ -144,10 +182,18 @@ header a {
   letter-spacing: 2px;
   text-transform: uppercase;
   background: white;
-  color: #272044;
+  color: #004445;
   text-decoration: none;
   padding: 16px 32px;
   display: inline-block;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+header a:hover {
+  background-color: #2c786c;
+  color: white;
+  transition: 1s;
 }
 
 main {
@@ -158,9 +204,8 @@ main h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 5px;
-  color: #272044;
-  opacity: 0.3;
+  letter-spacing: 3px;
+  color: #2c786c;
   text-transform: uppercase;
   margin: 0;
 }
@@ -169,7 +214,7 @@ main h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.2;
-  color: #272044;
+  color: #004445;
   margin: 0;
 }
 
@@ -220,11 +265,17 @@ footer li {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 5px;
 }
 
 footer a {
   color: white;
   opacity: 0.7;
+}
+
+footer a:hover {
+  color: #2c786c;
+  transition: 1s;
 }
 
 @media (max-width: 960px) {
@@ -248,6 +299,10 @@ footer a {
   header a {
     padding: 10px 25px;
     font-size: 12px;
+  }
+
+  .more-info {
+    margin-top: 10px;
   }
 
   .grid {
